@@ -16,10 +16,430 @@
 	</style>
 	<title>Document</title>
 	<style type="text/css">
-		
+		.container{
+			max-width: 750px;
+			margin: 10px auto;
+		}
+		.header{
+			display: flex;
+			flex-wrap: nowrap;
+			padding: 10px;
+			border-bottom: 1px solid gainsboro;
+			width: 100vw;
+		}
+		.header button{
+			padding: 5px 10px;
+			margin-right: 10px;
+			border: none;
+			background-color: transparent;
+		}
+		.header button.active{
+			color: red;
+			font-weight: 600;
+			border-bottom: 2px solid red;
+		}
+		.main-box{
+			padding: 5px 10px;
+			overflow:hidden;
+			width: 100vw;
+		}
+		.main{
+			overflow-x:scroll;
+			display: none;
+			flex-wrap: nowrap;
+			justify-items: center;
+			width: 100%;
+		}
+		.main.active{
+			display: flex;
+		}
+		.main::-webkit-scrollbar{
+			height: 2px;
+		}
+		.main section{
+			padding: 10px;
+			flex: 0 0 auto;
+		}
+		.main section{
+			font-size: 18px;
+		}
+		.main section ul{
+			margin-top: 10px;
+		}
+		.main section li{
+			line-height: 22px;
+			font-size: 15px;
+		}
 	</style>
 </head>
 <body>
+	<div class="container">
+		<div class="header">
+			<button class="active" data-index='0'>每必</button>
+			<button data-index='1'>巨头</button>
+			<button data-index='2'>前后端</button>
+			<button data-index='3'>UI</button>
+			<button data-index='4'>打包发布</button>
+			<button data-index='5'>工具</button>
+			<button data-index='6'>JB</button>
+		</div>
+		<div class="main-box">
+	<!-- 每必 -->
+			<div class="main active">
+				<section>
+					<h2>React</h2>
+					<ul>
+						<li>NextJs</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Vue</h2>
+					<ul>
+						<li>NuxtJs</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>原生</h2>
+					<ul>
+						<li>JQuery</li>
+						<li>商城</li>
+						<li>爱创课堂</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>小程序</h2>
+					<ul>
+						<li>基础到精通</li>
+						<li>云开发</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>桌面</h2>
+					<ul>
+						<li>Electron</li>
+					</ul>
+				</section>
+			</div>
+	<!-- 巨头 -->
+			<div class="main">
+				<section>
+					<h2>Big</h2>
+					<ul>
+						<li>官网</li>
+						<li>网站后台</li>
+						<li>购物网</li>
+						<li><br/></li>
+						<li>视频网</li>
+						<li>图片网</li>
+						<li>音乐网</li>
+						<li>阅读网</li>
+						<li>地图网</li>
+						<li>论坛网</li>
+						<li><br/></li>
+						<li>工具网</li>
+						<li>PS网</li>
+						<li>动画网</li>
+						<li>下载网</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>前端开发工程师</h2>
+					<ul>
+						<li>React*3*2*2*2</li>
+						<li>Vue*3*2*2*2</li>
+						<li><br/></li>
+						<li>Wx*2</li>
+						<li>UniApp*2</li>
+						<li>Electron*2</li>
+						<li>公众号*2</li>
+						<li><br/></li>
+						<li>JQuery*2</li>
+						<li>BootStrap*2</li>
+						<li>原生*2</li>
+					</ul>
+				</section>
+			</div>
+	<!-- 前后端 -->
+			<div class="main">
+				<section>
+					<h2>Node</h2>
+					<ul>
+						<li>Node</li>
+						<li>Express</li>
+						<li>Nest</li>
+						<li><br /></li>
+						<li>Koa</li>
+						<li>Redis</li>
+						<li>云开发</li>
+						<li>云数据库</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>数据库</h2>
+					<ul>
+						<li>Mongo</li>
+						<li>Mongoose</li>
+						<li>MySQL</li>
+						<li><br /></li>
+						<li>IndexDB</li>
+						<li>Cookie</li>
+						<li>Storage</li>
+						<li>Token/Session</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>HTTP</h2>
+					<ul>
+						<li>Ajax</li>
+						<li>Axios</li>
+						<li>Fetch</li>
+						<li><br /></li>
+						<li>Wx第三方</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>WebSocket</h2>
+					<ul>
+						<li>WebSocket</li>
+						<li>SockJS</li>
+						<li>Socket.IO</li>
+						<li><br /></li>
+						<li>环信</li>
+						<li>融云</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>TCP/IP</h2>
+					<ul>
+						<li>原理</li>
+					</ul>
+				</section>
+			</div>
+	<!-- UI -->
+			<div class="main">
+				<section>
+					<h2>UI</h2>
+					<ul>
+						<li>Css3</li>
+						<li>Less</li>
+						<li>Sass</li>
+						<li>Stylus</li>
+						<li>Tailwind</li>
+						<li>CssInJs</li>
+						<li>BootStrap</li>
+						<li><br/></li>
+						<li>Flex</li>
+						<li>Grid</li>
+						<li>适配</li>
+						<li>原生</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>动画</h2>
+					<ul>
+						<li>Animation</li>
+						<li>Canvas</li>
+						<li>React动画</li>
+						<li>Vue动画</li>
+						<li>小程序动画</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>图表</h2>
+					<ul>
+						<li>Echart</li>
+						<li>ChartJS</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>地图</h2>
+					<ul>
+						<li>高德地图</li>
+						<li>百度地图</li>
+						<li>开源地图</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>直播|视频</h2>
+					<ul>
+						<li>直播框架</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>3D</h2>
+					<ul>
+						<li>ThreeJS</li>
+					</ul>
+				</section>
+			</div>
+	<!-- 打包发布 -->
+			<div class="main">
+				<section>
+					<h2>包管理</h2>
+					<ul>
+						<li>Pnpm</li>
+						<li>Npm</li>
+						<li>Cnpm</li>
+						<li>Yarn</li>
+						<li><br/></li>
+						<li>Nrm</li>
+						<li>Npx</li>
+						<li>Nvm</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>打包运行</h2>
+					<ul>
+						<li>Webpack</li>
+						<li>Rollup</li>
+						<li>Parcel</li>
+						<li><br/></li>
+						<li>Vite</li>
+						<li>脚手架</li>
+						<li>Grunt</li>
+						<li>Gulp</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>发布1</h2>
+					<ul>
+						<li>Git</li>
+						<li>Svn</li>
+						<li><br/></li>
+						<li>GitHub</li>
+						<li>GitLab</li>
+						<li>Gitee</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>发布2</h2>
+					<ul>
+						<li>阿里云</li>
+						<li>Linux</li>
+						<li>Nginx</li>
+						<li><br/></li>
+						<li>Docker</li>
+						<li>CICD</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>特殊配置</h2>
+					<ul>
+						<li>私服</li>
+						<li>第三方包</li>
+						<li>CDN</li>
+					</ul>
+				</section>
+			</div>
+	<!-- 工具 -->
+			<div class="main">
+				<section>
+					<h2>编辑工具</h2>
+					<ul>
+						<li>Sublime</li>
+						<li>Wx</li>
+						<li>Vscode</li>
+						<li>HBuild</li>
+						<li>WebStorm</li>
+						<li>CMD</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>测试工具</h2>
+					<ul>
+						<li>Fiddler</li>
+						<li>Postman</li>
+						<li>Whistle</li>
+						<li>Charles</li>
+						<li>spy-debugger</li>
+						<li><br/></li>
+						<li>Jest</li>
+						<li>Chrome</li>
+					</ul>
+				</section>
+			</div>
+	<!-- JB -->
+			<div class="main">
+				<section>
+					<h2>React</h2>
+					<ul>
+						<li>NextJs</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Vue</h2>
+					<ul>
+						<li>NuxtJs</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>原生</h2>
+					<ul>
+						<li>JQuery</li>
+						<li>商城</li>
+						<li>爱创课堂</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>小程序</h2>
+					<ul>
+						<li>基础到精通</li>
+						<li>云开发</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>桌面</h2>
+					<ul>
+						<li>Electron</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
 	
+
+</script>
+<script type="text/javascript">
+	window.onload = function(){
+		const btns = document.querySelectorAll('.header button')
+		const mains = document.querySelectorAll('.main')
+		const header = document.querySelector('.header')
+		let currentIndex = 0;
+		header.addEventListener('click',(e)=>{
+			currentIndex = parseInt(e.target.dataset.index)
+			Array.prototype.forEach.call(btns,(btn,index)=>{
+				btn.classList.remove('active')
+				mains[index].classList.remove('active')
+			})
+			e.target.classList.add('active')
+			mains[currentIndex].classList.add('active')
+		})
+
+	}
+</script>
 </body>
 </html>
